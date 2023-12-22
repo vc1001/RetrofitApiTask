@@ -24,6 +24,9 @@ public class Datum {
     @SerializedName("pantone_value")
     @Expose
     private String pantoneValue;
+    @SerializedName("support")
+    @Expose
+    private Support support;
 
     public Integer getId() {
         return id;
@@ -63,6 +66,13 @@ public class Datum {
 
     public void setPantoneValue(String pantoneValue) {
         this.pantoneValue = pantoneValue;
+    }
+    public Support getSupport() {
+        return support;
+    }
+
+    public void setSupport(Support support) {
+        this.support = support;
     }
 
 }
